@@ -60,6 +60,11 @@ a:hover {
    color: var(--light-green);
 }
 
+a.sign {
+   width: 28px;
+   height: 28px;
+}
+
 button {
    width: 100%;
    height: 50px;
@@ -252,6 +257,25 @@ input {
 
 .input-group {
    margin-top: 0.8rem;
+}
+
+#transaction-amount {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.transaction-sign {
+   margin: 0 5px 0;
+   opacity: 0.4;
+}
+
+.transaction-sign:hover {
+   opacity: 0.6;
+}
+
+.transaction-sign.active {
+   opacity: 1;
 }
 
 .input-group small {

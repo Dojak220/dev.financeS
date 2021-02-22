@@ -15,6 +15,27 @@ const Modal = {
       document
          .querySelector(".modal-overlay")
          .classList.toggle("active");
+   },
+   selectAmountSign(sign) {
+      switch (sign) {
+         case 'positive':
+            document
+               .querySelector(".transaction-sign.positive")
+               .classList.add("active");
+            document
+               .querySelector(".transaction-sign.negative")
+               .classList.remove("active");
+            break;
+         case 'negative':
+            document
+               .querySelector(".transaction-sign.negative")
+               .classList.add("active");
+            document
+               .querySelector(".transaction-sign.positive")
+               .classList.remove("active");
+         default:
+            break;
+      }
    }
 }
 
